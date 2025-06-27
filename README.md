@@ -1,3 +1,4 @@
+
 # AI-Powered API Documentation Generator
 
 This tool generates clean, multi-format API documentation (HTML, Markdown, PDF) from OpenAPI YAML or JSON files. It includes optional AI-powered summaries using OpenRouter.
@@ -19,7 +20,7 @@ This tool generates clean, multi-format API documentation (HTML, Markdown, PDF) 
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/yourusername/ai-api-doc-generator.git
+git clone https://github.com/Trapstarvibess/ai-api-doc-generator.git
 cd ai-api-doc-generator
 pip install -r requirements.txt
 ```
@@ -32,9 +33,9 @@ streamlit run web_app.py
 
 ## 🛠️ Developer
 
-Made with ❤️ by **Jennifer Daniels**  
+Made by ** Seb-Ikpoza Daniels**  as a Final Year project
 Want unlimited AI summaries or support?  
-📩 Email: jennifer@example.com
+📩 Email: sebikpozadan@gmail.com
 
 ## 📄 License
 
