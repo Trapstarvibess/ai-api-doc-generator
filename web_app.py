@@ -3,6 +3,24 @@ import os
 import shutil
 from main import process_openapi_file
 
+import os
+import streamlit as st
+from dotenv import load_dotenv
+
+# Load from .env if running locally
+load_dotenv()
+
+# Try to get from Streamlit Cloud secrets
+try:
+    os.environ["OPENROUTER_API_KEY"] = st.secrets["OPENROUTER_API_KEY"]
+except Exception:
+    # This is expected when running locally — no secrets.toml
+    pass
+
+
+
+
+
 st.set_page_config(page_title="AI API Doc Generator", layout="centered")
 
 st.title("🤖 AI-Powered API Documentation Generator")
