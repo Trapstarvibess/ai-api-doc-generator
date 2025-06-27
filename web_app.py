@@ -3,24 +3,6 @@ import os
 import shutil
 from main import process_openapi_file
 
-import os
-import streamlit as st
-from dotenv import load_dotenv
-
-# Load from .env if running locally
-load_dotenv()
-
-# Try to get from Streamlit Cloud secrets
-try:
-    os.environ["OPENROUTER_API_KEY"] = st.secrets["OPENROUTER_API_KEY"]
-except Exception:
-    # This is expected when running locally — no secrets.toml
-    pass
-
-
-
-
-
 st.set_page_config(page_title="AI API Doc Generator", layout="centered")
 
 st.title("🤖 AI-Powered API Documentation Generator")
@@ -29,7 +11,7 @@ st.markdown("Upload an OpenAPI `.yaml`, `.yml`, or `.json` file and get complete
 # ⚠️ Free version notice
 st.markdown(
     """
-    <div style='border: 1px solid red; padding: 10px; margin: 20px 0; background-color: #black;'>
+    <div style='border: 1px solid red; padding: 10px; margin: 20px 0; background-color: #Black;'>
         <strong>⚠️ Notice:</strong> This is a <em>free version</em> of the API documentation generator.<br>
         It only supports limited AI summarization due to usage limits.<br>
         For large-scale or custom documentation solutions, please <strong>contact the developer</strong>.
